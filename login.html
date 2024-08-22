@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Resume Viewer</title>
+  </head>
+  <body>
+    <div class="container-sm login-container">
+
+        <div class="login-form form-group">
+
+            <input type="text" id="username" name="username" placeholder="User Name" class="input-sm form-control" required>
+
+
+            <input type="password" id="password" name="password" placeholder="Password" class="input-sm form-control" required>
+
+            <button type="submit" onclick="login()"><span>Login</span></button>
+            
+        </div>
+        <p id="login-error"></p>
+    </div>
+    <script src="js/login.js"></script>    
+  </body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Viewer</title>
+    <link rel="stylesheet" href="css/resume.css">
+</head>
+
+<body>
+    <div id="resume-page" class="container">
+        <div class="header">
+            <button class="btn" id="prev-btn" onclick="showPrevious()">Prev</button>
+            <input type="text" id="job-filter" placeholder="search for keywords to filter the resumes">
+            <button class="btn" id="next-btn" onclick="showNext()">Next</button>
+            <button onclick="logout()">Logout</button>
+        </div>
+
+
+        <div style="display: block;margin:auto;width:75%">
+            <div id="resume-error">
+                <img src="images/sad-face.png" alt="Profile Picture">
+                <p id="resume-error-msg"></p>
+            </div>
+        </div>
+
+
+        <div id="resume-content">
+            <div id="profile" class="profile">
+                <div class="profile-header">
+                    <div class="profile-start">
+                    </div>
+                    <div class="profile-info">
+                        <h1 id="applicant-name"></h1>
+                        <p id="applied-for"></p>
+                    </div>
+
+                    <div class="profile-image">
+                        <img src="images/profile-icon.png" alt="Profile Picture">
+                    </div>
+                </div>
+
+                <div class="content-wrapper">
+                    <div class="sidebar">
+                        <div class="sidebar-section">
+                            <h3>Personal Information</h3>
+                            <p id="phone"></p>
+                            <p id="email"></p>
+                            <p><a href="" id="linkedin-url"></a></p>
+                        </div>
+                        <div class="sidebar-section">
+                            <h3>Technical Skills</h3>
+                            <div id="technicalSkills"></div>
+                        </div>
+                        <div class="sidebar-section">
+                            <h3>Hobbies</h3>
+                            <div id="hobbies"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="resume-content">
+                        <section>
+                            <h2>Work Experience in Previous Company</h2>
+                            <div style="margin-left:20px">
+                                <p id="work-company-name"></p>
+                                <p id="work-company-position"></p>
+                                <p id="work-company-start"></p>
+                                <p id="work-company-end"></p>
+                                <p id="work-company-summary"></p>
+                            </div>
+                        </section>
+
+                        <section>
+                            <h2>Projects</h2>
+                            <div style="margin-left:20px">
+                                <p id="projects"></p>
+                            </div>
+                        </section>
+
+                        <section>
+                            <h2>Education</h2>
+                            <p id="education"></p>
+                        </section>
+
+                        <section>
+                            <h2>Internship</h2>
+                            <p id="internship"></p>
+                        </section>
+
+                        <section>
+                            <h2>Achievements</h2>
+                            <p id="achievements"></p>
+                        </section>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+    <script src="js/resume.js"></script>
+    <script type="text/javascript" src="data/data.js"></script>
+</body>
+
+</html>
